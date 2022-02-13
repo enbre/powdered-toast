@@ -12,3 +12,26 @@ section {
   height: 200px;
   border: 2px solid blue;
 }
+
+.navbar ul {
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  text-align: center;
+}
+
+.navbar li a:hover {
+  background-color: orange;
+}
