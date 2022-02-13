@@ -1,4 +1,13 @@
-body {
+* {
    background: purple;
    color: gold;
+   box-sizing: border-box;
+   margin: 0;
+   scroll-behavior: smooth;
+}
+
+section {
+   width: 80%;
+   height: 200px;
+   border: 2px solid blue;
 }
