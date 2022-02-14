@@ -26,15 +26,15 @@ body {
    // align-content: center;
    align-items: center;
 }
-#help {
-   color:red;
-   // background-color: white;
-   height: 100px;
-   width: 200px;
-   fill: blue;
-   stroke: orange;
+// #help {
+//    color:red;
+//    // background-color: white;
+//    height: 100px;
+//    width: 200px;
+//    fill: blue;
+//    stroke: orange;
    
-}
+// }
 img {
    stroke: orange;
    fill: white;
@@ -79,7 +79,7 @@ img {
 }
 
 section {
-   width: 80%;
+   width: 100%;
    height: 200px;
    border: 2px solid blue;
    display: flex;
@@ -87,4 +87,27 @@ section {
    & h2 {
       font-family: 'ZCOOL QingKe HuangYou', cursive;
    }
+}
+#home {
+
+   background-image: url("../../Assets/banner-toast.jpg");
+   color: orange;
+}
+
+#about {
+   // background-image: url("../../Assets/banner-toast.jpg");
+   color: palegreen;
+   
+}
+#eatIt {
+   
+   color: pink
+}
+#pairIt {
+   color: lightcoral;
+   
+}
+#newsletter {
+   color: lightblue;
+
 }
