@@ -1,20 +1,19 @@
 @import 'variables';
 
-// to pick fonts:
-// font-family: 'Roboto', sans-serif;
-// font-family: 'ZCOOL QingKe HuangYou', cursive;
-* {
-   // border: 2px solid red;
-   // background-color: orange;
-   color: white;
-}
+
+// * {
+//    // border: 2px solid red;
+//    // background-color: orange;
+//    // color: white;
+// }
 html{
-   background: $red;
+   background: $white;
+   background: green;
    color: gold;
    box-sizing: border-box;
    // margin: auto ;
    scroll-behavior: smooth;
-   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-family: 'Astloch', cursive;
    font-family: 'Roboto', sans-serif;
    // border: 2px solid purple;
 }
@@ -23,40 +22,31 @@ body {
    margin: 0 auto;
    display: flex;
    flex-direction: column;
+
    // align-content: center;
-   align-items: center;
+   // align-items: center;
 }
-// #help {
-//    color:red;
-//    // background-color: white;
-//    height: 100px;
-//    width: 200px;
-//    fill: blue;
+
+// img {
 //    stroke: orange;
-   
+//    fill: white;
+//    color: orange;
+//    // width: 10%;
 // }
-img {
-   stroke: orange;
-   fill: white;
-   color: orange;
-   width: 10%;
-}
 .navbar {
-   // position: fixed;
+   z-index: 2;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
    align-items: center;
    position: sticky;
-   // text-align: center;
-   width: 80%;
-   margin: auto;
+   width: 100%;
    border: 2px solid palegoldenrod;
 
-   top:0px;
+   // top:-1000px;
    // height: auto;
    & ul {
-      margin: 20px 32px 88px ;
-      // padding: 0;
+      // margin: 20px 32px 88px ;
+      padding: 0;
       // overflow: hidden;
       list-style-type: none;
    }
@@ -67,10 +57,10 @@ img {
    & li a {
       color: $white;
       text-decoration: none;
-      display: block;
-      padding: 8px;
-      text-align: center;
-      background-color: purple;
+      // display: block;
+      padding: 40px;
+      // text-align: center;
+      border:2px solid red;
       &:hover {
          background-color: orange;
       }
@@ -83,24 +73,42 @@ section {
    height: 200px;
    border: 2px solid blue;
    display: flex;
+   flex-direction: column;
    justify-content: center;
+   // align-content: flex-start;
+   align-items: center;
+   // position: absolute;
+
    & h2 {
-      font-family: 'ZCOOL QingKe HuangYou', cursive;
+
+      font-family: 'Astloch', cursive;
+      font-weight: 100;
+      color: $red;
    }
 }
-#home {
+#hero-logo {
+   height: 300px;
 
+}
+#hero-texture {
+   // align-self: flex-end;
+   // position:relative;
+   // bottom: 0;
+}
+#home {
+   // top:0;
+   // position: absolute;
    background-image: url("../../Assets/banner-toast.jpg");
    color: orange;
+   height: 600px;
 }
 
 #about {
    // background-image: url("../../Assets/banner-toast.jpg");
-   color: palegreen;
-   
+   color:green;
+   background-color: greenyellow;
 }
 #eatIt {
-   
    color: pink
 }
 #pairIt {
@@ -110,4 +118,7 @@ section {
 #newsletter {
    color: lightblue;
 
+}
+.logo {
+   filter: invert(100%);
 }
