@@ -6,10 +6,9 @@
 //    // background-color: orange;
 //    // color: white;
 // }
-html{
+html {
    background: $white;
-   background: green;
-   color: gold;
+   color: navy;
    box-sizing: border-box;
    // margin: auto ;
    scroll-behavior: smooth;
@@ -18,53 +17,56 @@ html{
    @include font-size2;
    // border: 2px solid purple;
 }
+
 body {
    // border: 2px solid green;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
 
-   // align-content: center;
+   align-content: center;
    // align-items: center;
 }
 
-// img {
-//    stroke: orange;
-//    fill: white;
-//    color: orange;
-//    // width: 10%;
-// }
+
 .navbar {
    z-index: 2;
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   // align-items: flex-start;
+   justify-content: center;
+   margin: 0;
    position: sticky;
    width: 100%;
    border: 2px solid palegoldenrod;
-
-   // top:-1000px;
-   // height: auto;
+   
    & ul {
+      border: 2px solid purple;
       // margin: 20px 32px 88px ;
       padding: 0;
       // overflow: hidden;
       list-style-type: none;
    }
+
    & li {
       float: left;
       text-decoration: none;
+      padding: 20px 32px 88px;
+      border: 2px solid green;
+      width: 60px;
+      ;
    }
+
    & li a {
       color: $white;
       text-decoration: none;
       // display: block;
-      padding: 40px;
       // text-align: center;
-      border:2px solid red;
+      border: 2px solid red;
       @include font-size3;
+
       &:hover {
-         background-color: orange;
+         text-decoration: underline;
+         color: $red;
 
       }
    }
@@ -73,11 +75,11 @@ body {
 
 section {
    width: 100%;
-   height: 200px;
+   height: auto;
    border: 2px solid blue;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    // align-content: flex-start;
    align-items: center;
    // position: absolute;
@@ -89,39 +91,57 @@ section {
       color: $red;
    }
 }
+
 #hero-logo {
    height: 300px;
 
 }
-#hero-texture {
-   // align-self: flex-end;
-   // position:relative;
-   // bottom: 0;
-}
+
+// #hero-texture {
+//    // align-self: flex-end;
+//    // position:relative;
+//    // bottom: 0;
+// }
 #home {
-   // top:0;
-   // position: absolute;
+   border: 2px solid blue;
    background-image: url("../../Assets/banner-toast.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: orange;
+   // width: auto;
    color: orange;
-   height: 600px;
+   min-height: 800px;
 }
 
 #about {
    // background-image: url("../../Assets/banner-toast.jpg");
-   color:green;
+   color: green;
    background-color: greenyellow;
 }
+
 #eatIt {
    color: pink
 }
+
 #pairIt {
    color: lightcoral;
-   
+
 }
+
 #newsletter {
    color: lightblue;
 
 }
+
 .logo {
    filter: invert(100%);
+}
+
+#footer-logo {
+   fill: $red;
+}
+
+#test-footer {
+   fill: purple;
+   stroke: orange;
 }

@@ -1,7 +1,6 @@
 html {
   background: #FFFFFF;
-  background: green;
-  color: gold;
+  color: navy;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
@@ -27,6 +26,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .navbar {
@@ -34,13 +35,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
@@ -48,6 +46,7 @@ body {
 }
 
 .navbar ul {
+  border: 2px solid purple;
   padding: 0;
   list-style-type: none;
 }
@@ -55,12 +54,14 @@ body {
 .navbar li {
   float: left;
   text-decoration: none;
+  padding: 20px 32px 88px;
+  border: 2px solid green;
+  width: 60px;
 }
 
 .navbar li a {
   color: #FFFFFF;
   text-decoration: none;
-  padding: 40px;
   border: 2px solid red;
   font-size: 16px;
   line-height: 22px;
@@ -74,12 +75,13 @@ body {
 }
 
 .navbar li a:hover {
-  background-color: orange;
+  text-decoration: underline;
+  color: #844646;
 }
 
 section {
   width: 100%;
-  height: 200px;
+  height: auto;
   border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,9 +90,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -107,9 +109,13 @@ section h2 {
 }
 
 #home {
+  border: 2px solid blue;
   background-image: url("../../Assets/banner-toast.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: orange;
   color: orange;
-  height: 600px;
+  min-height: 800px;
 }
 
 #about {
@@ -132,4 +138,13 @@ section h2 {
 .logo {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+#footer-logo {
+  fill: #844646;
+}
+
+#test-footer {
+  fill: purple;
+  stroke: orange;
 }

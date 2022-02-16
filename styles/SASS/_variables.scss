@@ -12,7 +12,7 @@ $mobile-width: 768px;
 // Not sure how to do it, but there has to be a way of referrencing this with the font-size mixin:
 
 // $fsize: (
-// 1 12px 16px 10px 14px
+// 1 12 16 10 14
 // 2 14 20 12 16
 // 3 16 22 14 20
 // 4 18 24 16 22
@@ -22,11 +22,11 @@ $mobile-width: 768px;
 // );
 
 // @mixin font-size($fsize) {
-//    font-size: 12px;
-//    line-height:16px; 
-//    @media (width < $mobile-width){
-//       font-size: 10px;
-//       line-height: 14px;
+//    font-size: $A px;
+//    line-height: $B px; 
+// @media  only screen and (max-width: $mobile-width){
+//       font-size: $C px;
+//       line-height: $D px;
 //    }
 // }
 
