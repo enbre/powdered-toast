@@ -1,68 +1,53 @@
 @import 'variables';
 
 
-// * {
-//    // border: 2px solid red;
-//    // background-color: orange;
-//    // color: white;
-// }
+
 html {
    background: $white;
-   color: navy;
+   color: $dark-grey;
    box-sizing: border-box;
-   // margin: auto ;
+   margin: auto;
    scroll-behavior: smooth;
-   font-family: 'Astloch', cursive;
    font-family: 'Roboto', sans-serif;
-   @include font-size2;
-   // border: 2px solid purple;
+   // @include font-size2;
 }
 
 body {
-   // border: 2px solid green;
+   // border: 2px solid red;
    margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-
-   align-content: center;
-   // align-items: center;
 }
 
 
 .navbar {
-   z-index: 2;
    display: flex;
-   // align-items: flex-start;
+   align-items: center;
+   flex-wrap: nowrap;
    justify-content: center;
-   margin: 0;
    position: sticky;
    width: 100%;
-   border: 2px solid palegoldenrod;
-   
+   top: 0;
+   // border: 2px solid palegoldenrod;
+
    & ul {
-      border: 2px solid purple;
-      // margin: 20px 32px 88px ;
-      padding: 0;
-      // overflow: hidden;
+      margin: 0;
+      overflow: hidden;
       list-style-type: none;
+      // border: 2px solid purple;
    }
 
    & li {
-      float: left;
+      display: inline-block;
       text-decoration: none;
       padding: 20px 32px 88px;
-      border: 2px solid green;
-      width: 60px;
-      ;
+      // border: 2px solid green;
    }
 
    & li a {
       color: $white;
       text-decoration: none;
-      // display: block;
-      // text-align: center;
-      border: 2px solid red;
+      display: block;
       @include font-size3;
+      // border: 2px solid red;
 
       &:hover {
          text-decoration: underline;
@@ -75,46 +60,33 @@ body {
 
 section {
    width: 100%;
+   // max-width: 1440px;
    height: auto;
-   border: 2px solid blue;
+   // border: 2px solid blue;
    display: flex;
+   margin: 0;
    flex-direction: column;
-   justify-content: flex-start;
-   // align-content: flex-start;
    align-items: center;
-   // position: absolute;
 
    & h2 {
 
       font-family: 'Astloch', cursive;
-      font-weight: 100;
+      // font-weight: 100;
       color: $red;
+      @include font-size3;
    }
 }
 
-#hero-logo {
-   height: 300px;
-
-}
-
-// #hero-texture {
-//    // align-self: flex-end;
-//    // position:relative;
-//    // bottom: 0;
-// }
 #home {
    border: 2px solid blue;
    background-image: url("../../Assets/banner-toast.jpg");
    background-repeat: no-repeat;
    background-size: contain;
-   background-color: orange;
-   // width: auto;
-   color: orange;
-   min-height: 800px;
+   width: 100%;
+   height: auto;
 }
 
 #about {
-   // background-image: url("../../Assets/banner-toast.jpg");
    color: green;
    background-color: greenyellow;
 }
@@ -130,18 +102,35 @@ section {
 
 #newsletter {
    color: lightblue;
-
 }
 
-.logo {
+.logo-invert {
    filter: invert(100%);
+}
+
+#nav-logo {
+   // height: 44px;
+   width: 39.62px;
+   fill: $white;
+   margin-bottom: -10px;
+
+
+   & :hover {
+      fill: $red;
+   }
 }
 
 #footer-logo {
    fill: $red;
 }
 
-#test-footer {
-   fill: purple;
-   stroke: orange;
+#hero-texture {
+   // align-self: flex-end;
+   position: relative;
+   // bottom: 0;
+}
+
+#hero-logo {
+   height: 487px;
+   width: 376px;
 }

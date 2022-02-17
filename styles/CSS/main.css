@@ -1,68 +1,51 @@
 html {
   background: #FFFFFF;
-  color: navy;
+  color: #333333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: auto;
   scroll-behavior: smooth;
-  font-family: 'Astloch', cursive;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
-    line-height: 16px;
-  }
 }
 
 body {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .navbar {
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
-  border: 2px solid palegoldenrod;
+  top: 0;
 }
 
 .navbar ul {
-  border: 2px solid purple;
-  padding: 0;
+  margin: 0;
+  overflow: hidden;
   list-style-type: none;
 }
 
 .navbar li {
-  float: left;
+  display: inline-block;
   text-decoration: none;
   padding: 20px 32px 88px;
-  border: 2px solid green;
-  width: 60px;
 }
 
 .navbar li a {
   color: #FFFFFF;
   text-decoration: none;
-  border: 2px solid red;
+  display: block;
   font-size: 16px;
   line-height: 22px;
 }
@@ -82,17 +65,14 @@ body {
 section {
   width: 100%;
   height: auto;
-  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -100,12 +80,16 @@ section {
 
 section h2 {
   font-family: 'Astloch', cursive;
-  font-weight: 100;
   color: #844646;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-#hero-logo {
-  height: 300px;
+@media only screen and (max-width: 768px) {
+  section h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 #home {
@@ -113,9 +97,8 @@ section h2 {
   background-image: url("../../Assets/banner-toast.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: orange;
-  color: orange;
-  min-height: 800px;
+  width: 100%;
+  height: auto;
 }
 
 #about {
@@ -135,16 +118,30 @@ section h2 {
   color: lightblue;
 }
 
-.logo {
+.logo-invert {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+#nav-logo {
+  width: 39.62px;
+  fill: #FFFFFF;
+  margin-bottom: -10px;
+}
+
+#nav-logo :hover {
+  fill: #844646;
 }
 
 #footer-logo {
   fill: #844646;
 }
 
-#test-footer {
-  fill: purple;
-  stroke: orange;
+#hero-texture {
+  position: relative;
+}
+
+#hero-logo {
+  height: 487px;
+  width: 376px;
 }
