@@ -112,6 +112,10 @@ section h4 {
   }
 }
 
+.container {
+  max-width: 1440px;
+}
+
 #home {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../Assets/banner-toast.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../Assets/banner-toast.jpg");
@@ -162,7 +166,7 @@ section h4 {
 }
 
 #hero-texture {
-  position: relative;
+  margin-top: -30px;
 }
 
 #hero-logo {
