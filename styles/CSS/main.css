@@ -1,5 +1,6 @@
 html {
   background: #FFFFFF;
+  background: paleturquoise;
   color: #333333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -46,8 +47,11 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   display: block;
+  letter-spacing: 2px;
   font-size: 16px;
   line-height: 22px;
+  -webkit-transition: color .15s;
+  transition: color .15s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -93,12 +97,13 @@ section h2 {
 }
 
 #home {
-  border: 2px solid blue;
-  background-image: url("../../Assets/banner-toast.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../Assets/banner-toast.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../Assets/banner-toast.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-color: black;
   width: 100%;
-  height: auto;
+  max-height: 847px;
 }
 
 #about {
@@ -124,9 +129,12 @@ section h2 {
 }
 
 #nav-logo {
-  width: 39.62px;
+  height: 44px;
+  width: 40px;
   fill: #FFFFFF;
   margin-bottom: -10px;
+  -webkit-transition: fill .15s;
+  transition: fill .15s;
 }
 
 #nav-logo :hover {
@@ -144,4 +152,10 @@ section h2 {
 #hero-logo {
   height: 487px;
   width: 376px;
+}
+
+#down-arrow {
+  width: 48px;
+  height: 48px;
+  margin: 48px;
 }
