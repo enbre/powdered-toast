@@ -1,0 +1,161 @@
+@import 'variables';
+
+
+
+html {
+   background: $white;
+   background: paleturquoise;
+   color: $dark-grey;
+   box-sizing: border-box;
+   margin: auto;
+   scroll-behavior: smooth;
+   font-family: 'Roboto', sans-serif;
+   // @include font-size2;
+}
+
+body {
+   // border: 2px solid red;
+   margin: 0 auto;
+}
+
+
+.navbar {
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   justify-content: center;
+   position: sticky;
+   width: 100%;
+   top: 0;
+   // border: 2px solid palegoldenrod;
+
+   & ul {
+      margin: 0;
+      overflow: hidden;
+      list-style-type: none;
+      // border: 2px solid purple;
+   }
+
+   & li {
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px 32px 88px;
+      // border: 2px solid green;
+   }
+
+   & li a {
+      color: $white;
+      text-decoration: none;
+      display: block;
+      letter-spacing: 2px;      
+      @include font-size3;
+      transition: color .15s;
+      // border: 2px solid red;
+
+      &:hover {
+         text-decoration: underline;
+         color: $red;
+
+      }
+   }
+
+}
+
+section {
+   width: 100%;
+   // max-width: 1440px;
+   height: auto;
+   // border: 2px solid blue;
+   display: flex;
+   margin: 0;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+   & h2 {
+
+      font-family: 'Astloch', cursive;
+      // font-weight: 100;
+      color: $red;
+      @include font-size7;
+   }
+   & h4 {
+      @include font-size4;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+   }
+}
+.container {
+   max-width: 1440px;
+}
+
+#home {
+   // border: 2px solid blue;
+   background-image: linear-gradient(
+      $overlay,$overlay
+   ),url("../../Assets/banner-toast.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   // background-size: contain;
+   background-color: rgba($color: #000000, $alpha: 1.0);
+   width: 100%;
+   max-height: 847px;
+}
+
+#about {
+   color: green;
+   background-color: greenyellow;
+}
+
+#eatIt {
+   color: pink
+}
+
+#pairIt {
+   color: lightcoral;
+
+}
+
+#newsletter {
+   color: lightblue;
+}
+
+.logo-invert {
+   filter: invert(100%);
+}
+
+#nav-logo {
+   height: 44px;
+   width: 40px;
+   fill: $white;
+   margin-bottom: -10px;
+   transition: fill .15s;
+
+
+   & :hover {
+      fill: $red;
+   }
+}
+
+#footer-logo {
+   fill: $red;
+}
+
+#hero-texture {
+   margin-top: -30px;
+}
+
+#hero-logo {
+   height: 487px;
+   width: 376px;
+}
+
+#down-arrow {
+   width: 48px;
+   height: 48px;
+   margin: 48px;
+}
+img {
+   // border: 2px solid white;
+}
