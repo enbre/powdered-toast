@@ -72,7 +72,7 @@ section {
    align-items: center;
    text-align: center;
    
-   & h2 {
+   h2 {
       
       font-family: 'Astloch', cursive;
       // font-weight: 100;
@@ -80,7 +80,7 @@ section {
       @include font-size7;
       padding-top: 28px;
    }
-   & h4 {
+   h4 {
       @include font-size4;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -89,18 +89,25 @@ section {
 }
 .container {
    background-color: $white;
-   max-width: 486px;
+   max-width: 1440px;
    border-radius: 16px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   // background-color: purple;
-   margin-top:-64px;
    & p {
       color: $lt-grey;
    }
    & > * {
       margin: 20px 0;
+   }
+   &-about {
+      margin-top:-64px;
+      max-width: 486px;
+      background-color: orange;
+   }
+   &-eatIt {
+      flex-direction:row;
+
    }
 }
 .line-break {
@@ -113,7 +120,18 @@ section {
    color: $red;
    font-weight: bold;
    @include font-size4;
+   margin-bottom: 120px;
 
+}
+.carousel {
+   width: 48px;
+   height: 48px;
+   margin: -24px;
+   transition: filter .15s;
+   z-index: 2;
+   &:hover {
+      filter:grayscale(100%);
+   }
 }
 #home {
    // border: 2px solid blue;
@@ -128,15 +146,31 @@ section {
    max-height: 847px;
 }
 
-#about {
-   // color: green;
-   // background-color: greenyellow;
-}
-
 #eatIt {
-   color: pink
+   h2 {
+      @include font-size6
+   }
+   img {
+      border-radius: 20px;
+   }
 }
+.eatIt {
+   // border: 2px solid blue;
+   &-desc {
+      display: flex;
 
+   }
+   &-image {
+      display: flex;
+      align-items: center;
+   }
+      &-bigImage {
+         height: 572px;
+         width: 950px;
+         border-radius: 16px;
+
+   }
+}
 #pairIt {
    color: lightcoral;
 

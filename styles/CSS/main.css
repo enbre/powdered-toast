@@ -124,7 +124,7 @@ section h4 {
 
 .container {
   background-color: #FFFFFF;
-  max-width: 486px;
+  max-width: 1440px;
   border-radius: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +136,6 @@ section h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -64px;
 }
 
 .container p {
@@ -145,6 +144,19 @@ section h4 {
 
 .container > * {
   margin: 20px 0;
+}
+
+.container-about {
+  margin-top: -64px;
+  max-width: 486px;
+  background-color: orange;
+}
+
+.container-eatIt {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .line-break {
@@ -159,6 +171,7 @@ section h4 {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -166,6 +179,22 @@ section h4 {
     font-size: 16px;
     line-height: 22px;
   }
+}
+
+.carousel {
+  width: 48px;
+  height: 48px;
+  margin: -24px;
+  -webkit-transition: -webkit-filter .15s;
+  transition: -webkit-filter .15s;
+  transition: filter .15s;
+  transition: filter .15s, -webkit-filter .15s;
+  z-index: 2;
+}
+
+.carousel:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 #home {
@@ -178,8 +207,41 @@ section h4 {
   max-height: 847px;
 }
 
-#eatIt {
-  color: pink;
+#eatIt h2 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+@media only screen and (max-width: 768px) {
+  #eatIt h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+#eatIt img {
+  border-radius: 20px;
+}
+
+.eatIt-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eatIt-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eatIt-bigImage {
+  height: 572px;
+  width: 950px;
+  border-radius: 16px;
 }
 
 #pairIt {
