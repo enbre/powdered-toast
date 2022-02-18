@@ -4,7 +4,7 @@
 
 html {
    background: $white;
-   background: paleturquoise;
+   // background: paleturquoise;
    color: $dark-grey;
    box-sizing: border-box;
    margin: auto;
@@ -47,7 +47,7 @@ body {
       color: $white;
       text-decoration: none;
       display: block;
-      letter-spacing: 2px;      
+      letter-spacing: 2px;
       @include font-size3;
       transition: color .15s;
       // border: 2px solid red;
@@ -71,15 +71,16 @@ section {
    flex-direction: column;
    align-items: center;
    text-align: center;
-   
+
    h2 {
-      
+
       font-family: 'Astloch', cursive;
       // font-weight: 100;
       color: $red;
       @include font-size7;
       padding-top: 28px;
    }
+
    h4 {
       @include font-size4;
       text-transform: uppercase;
@@ -87,6 +88,7 @@ section {
       font-weight: bold;
    }
 }
+
 .container {
    background-color: $white;
    max-width: 1440px;
@@ -94,28 +96,37 @@ section {
    display: flex;
    flex-direction: column;
    align-items: center;
+
    & p {
       color: $lt-grey;
    }
-   & > * {
+
+   &>* {
       margin: 20px 0;
    }
+
    &-about {
-      margin-top:-64px;
+      margin-top: -64px;
       max-width: 486px;
-      background-color: orange;
    }
+
    &-eatIt {
-      flex-direction:row;
+      flex-direction: row;
+
+      h2 {
+         @include font-size6;
+      }
 
    }
 }
+
 .line-break {
    background: $red;
    width: 48px;
    height: 4px;
    border-radius: 4px;
 }
+
 .kicker {
    color: $red;
    font-weight: bold;
@@ -123,21 +134,22 @@ section {
    margin-bottom: 120px;
 
 }
+
 .carousel {
    width: 48px;
    height: 48px;
    margin: -24px;
    transition: filter .15s;
    z-index: 2;
+
    &:hover {
-      filter:grayscale(100%);
+      filter: grayscale(100%);
    }
 }
+
 #home {
    // border: 2px solid blue;
-   background-image: linear-gradient(
-      $overlay,$overlay
-   ),url("../../Assets/banner-toast.jpg");
+   background-image: linear-gradient($overlay, $overlay), url("../../Assets/banner-toast.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    // background-size: contain;
@@ -146,31 +158,85 @@ section {
    max-height: 847px;
 }
 
-#eatIt {
-   h2 {
-      @include font-size6
-   }
-   img {
-      border-radius: 20px;
-   }
-}
 .eatIt {
+
    // border: 2px solid blue;
    &-desc {
       display: flex;
-
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      width: 350px;
+      margin: 0 48px;
+      p {
+         // margin-bottom: 64px;
+      }
    }
+
    &-image {
       display: flex;
       align-items: center;
+      margin: 48px;
    }
-      &-bigImage {
-         height: 572px;
-         width: 950px;
-         border-radius: 16px;
+
+   &-bigImage {
+      border-radius: 16px;
+      height: 572px;
+      width: 950px;
 
    }
+
+   &Types {
+      // border: 2px solid blue;
+      display: flex;
+      margin:  10px 0;
+      // align-items: flex-end;
+      // flex-direction: column;
+      // justify-content: center;
+      &-copy {
+         // display: flex;
+         // flex-direction: column;
+         width: 300px;
+         // border: 2px solid orange;
+         margin: 0 20px;
+         // padding: -20px;
+         // background-color: green;
+         &>* {
+            margin: 4px;
+         }
+         h3 {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            @include font-size4;
+            // background-color: aqua;
+
+         }
+
+         p {
+            color: $lt-grey;
+            // background-color: aqua;
+            @include font-size2;
+         }
+      }
+
+      img {
+         width: 56px;
+         height: 56px;
+         border-radius: 16px;
+         filter: opacity(.5);
+         transition: filter .15s;
+
+         &:hover,
+         &:active {
+            filter: opacity(1);
+         }
+      }
+
+      // flex-direction: column;
+   }
 }
+
 #pairIt {
    color: lightcoral;
 
@@ -215,9 +281,11 @@ section {
    height: 48px;
    margin: 48px;
 }
+
 img {
    // border: 2px solid white;
 }
+
 .space {
    height: 2000px;
 }
