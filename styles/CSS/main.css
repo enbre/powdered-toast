@@ -94,15 +94,15 @@ section {
 section h2 {
   font-family: 'Astloch', cursive;
   color: #844646;
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 56px;
+  line-height: 64px;
   padding-top: 28px;
 }
 
 @media only screen and (max-width: 768px) {
   section h2 {
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 
@@ -150,6 +150,18 @@ section h4 {
   max-width: 486px;
 }
 
+.container-about h2 {
+  font-size: 72px;
+  line-height: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-about h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
 .container-eatIt {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -157,16 +169,8 @@ section h4 {
           flex-direction: row;
 }
 
-.container-eatIt h2 {
-  font-size: 56px;
-  line-height: 64px;
-}
-
-@media only screen and (max-width: 768px) {
-  .container-eatIt h2 {
-    font-size: 36px;
-    line-height: 44px;
-  }
+.container-pair {
+  width: 486px;
 }
 
 .line-break {
@@ -311,11 +315,39 @@ section h4 {
 }
 
 #pairIt {
-  color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#newsletter {
-  color: lightblue;
+#pairIt h2 {
+  color: #844646;
+}
+
+#pairIt p {
+  color: #777777;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  #pairIt p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+#pairIt img {
+  width: 280px;
+  height: 280px;
+  border-radius: 16px;
+  margin: 48px 10px 20px;
+}
+
+.pairings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .logo-invert {
@@ -336,8 +368,40 @@ section h4 {
   fill: #844646;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+footer p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
 #footer-logo {
   fill: #844646;
+  width: 74px;
+  height: 82px;
+  margin-bottom: 20px;
 }
 
 #hero-texture {
@@ -353,8 +417,4 @@ section h4 {
   width: 48px;
   height: 48px;
   margin: 48px;
-}
-
-.space {
-  height: 2000px;
 }
