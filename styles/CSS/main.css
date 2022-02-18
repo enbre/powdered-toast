@@ -7,6 +7,15 @@ html {
   margin: auto;
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 body {
@@ -88,6 +97,7 @@ section h2 {
   color: #844646;
   font-size: 72px;
   line-height: 80px;
+  padding-top: 28px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -113,7 +123,49 @@ section h4 {
 }
 
 .container {
-  max-width: 1440px;
+  background-color: #FFFFFF;
+  max-width: 486px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -64px;
+}
+
+.container p {
+  color: #777777;
+}
+
+.container > * {
+  margin: 20px 0;
+}
+
+.line-break {
+  background: #844646;
+  width: 48px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.kicker {
+  color: #844646;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kicker {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 #home {
@@ -124,11 +176,6 @@ section h4 {
   background-color: black;
   width: 100%;
   max-height: 847px;
-}
-
-#about {
-  color: green;
-  background-color: greenyellow;
 }
 
 #eatIt {
@@ -178,4 +225,8 @@ section h4 {
   width: 48px;
   height: 48px;
   margin: 48px;
+}
+
+.space {
+  height: 2000px;
 }

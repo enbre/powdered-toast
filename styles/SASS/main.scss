@@ -10,7 +10,7 @@ html {
    margin: auto;
    scroll-behavior: smooth;
    font-family: 'Roboto', sans-serif;
-   // @include font-size2;
+   @include font-size4;
 }
 
 body {
@@ -71,13 +71,14 @@ section {
    flex-direction: column;
    align-items: center;
    text-align: center;
-
+   
    & h2 {
-
+      
       font-family: 'Astloch', cursive;
       // font-weight: 100;
       color: $red;
       @include font-size7;
+      padding-top: 28px;
    }
    & h4 {
       @include font-size4;
@@ -87,9 +88,33 @@ section {
    }
 }
 .container {
-   max-width: 1440px;
+   background-color: $white;
+   max-width: 486px;
+   border-radius: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   // background-color: purple;
+   margin-top:-64px;
+   & p {
+      color: $lt-grey;
+   }
+   & > * {
+      margin: 20px 0;
+   }
 }
+.line-break {
+   background: $red;
+   width: 48px;
+   height: 4px;
+   border-radius: 4px;
+}
+.kicker {
+   color: $red;
+   font-weight: bold;
+   @include font-size4;
 
+}
 #home {
    // border: 2px solid blue;
    background-image: linear-gradient(
@@ -104,8 +129,8 @@ section {
 }
 
 #about {
-   color: green;
-   background-color: greenyellow;
+   // color: green;
+   // background-color: greenyellow;
 }
 
 #eatIt {
@@ -158,4 +183,7 @@ section {
 }
 img {
    // border: 2px solid white;
+}
+.space {
+   height: 2000px;
 }
