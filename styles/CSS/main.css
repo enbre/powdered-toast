@@ -173,6 +173,65 @@ section h4 {
   width: 486px;
 }
 
+.container-make {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-make img {
+  width: 950px;
+  height: 572px;
+  border-radius: 16px;
+}
+
+.container-make h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-make h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.container-make p {
+  color: #777777;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-make p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.container-make span {
+  color: #777777;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-make span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.container-make span a {
+  color: #844646;
+}
+
 .line-break {
   background: #844646;
   width: 48px;
@@ -312,6 +371,11 @@ section h4 {
 .eatItTypes img:hover, .eatItTypes img:active {
   -webkit-filter: opacity(1);
           filter: opacity(1);
+}
+
+.makeIt-copy {
+  text-align: left;
+  margin-left: 48px;
 }
 
 #pairIt {
