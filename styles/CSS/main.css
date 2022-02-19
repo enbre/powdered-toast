@@ -94,9 +94,9 @@ section {
 section h2 {
   font-family: 'Astloch', cursive;
   color: #844646;
+  padding-top: 28px;
   font-size: 56px;
   line-height: 64px;
-  padding-top: 28px;
 }
 
 @media only screen and (max-width: 768px) {
